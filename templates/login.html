@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block content %}
+     <h1>Add name/surname database</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Name" name="name" value="{{
+          request.form.username }}">
+         <input type="text" placeholder="Surname" name="surname" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Add">
+      </form>
+{% endblock%}

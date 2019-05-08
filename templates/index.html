@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{%block content %}
+
+    <h1> Welcome to my page!</h1>
+    <br>
+    <p> Click <a href="/logout"> Here</a> to logout. </p>
+    <h3> Visiters :</h3>
+{% for visiter in visiters %}
+    <strong>Name :</strong> {{ visiter.name }} <br>
+    <strong>Surname :</strong> {{ visiter.surname }} <br>
+    <br>
+{% endfor %}
+{% endblock %}
